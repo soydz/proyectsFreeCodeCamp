@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+
+			<div class="title">
+				<h1 id="title" class="title__h1">Formulario</h1>
+				<p id="description" class="title__p">Gracias por tu aporte, nos ayudas a conocer a nuestros usuarios</p>
+			</div>
+			
+			<form action="" id="survey-form" class="form">
+				<div class="col">
+					<div class="form__name card">
+						<label for="name" id="name-label" class="form__label--title block">Nombre</label>
+						<input type="text" id="name" class="form__name--input caja" placeholder="Ingresa tu nombre" required>
+					</div> 
+					<div class="form__email card">
+						<label for="email" id="email-label" class="form__label--email block">Correo</label>
+						<input type="email" id="email" class="form__email--input caja" placeholder="Ingresa tu email" required>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card">					
+						<label for="number" id="number-label" class="block">Años de experiencia</label>
+						<input type="number" id="number" class="number caja" min="0" max="50" placeholder="Tiempo de experiencia">
+					</div>
+
+					<div class="card">
+						<label for="" class="dropdown__label block">Que sistema operativo prefieres</label>
+						<select type="dropdown" id="dropdown" class="caja" required>
+							<option disabled selected>Selecciona una opcion</option>
+							<option>Mac OS</option>
+							<option>GNU/Linux</option>
+							<option>Chrome OS</option>
+							<option>Solaris</option>
+							<option>Windows</option>
+						</select> 
+					</div>
+				</div>
+
+				<div class="card rol">
+					<h3 class="block rol__title">Cual es tu rol</h3>
+					<label class="nradio"><input type="radio" name="nradio" value="Diseñador UI/UX"> Diseñador UI/UX</label>
+					<label class="nradio"><input type="radio" name="nradio" value="Front-end"> Frontend</label>
+					<label class="nradio"><input type="radio" name="nradio" value="Back-end"> Backend</label>
+					<label class="nradio"><input type="radio" name="nradio" value="DBA"> DBA</label>
+					<label class="nradio"><input type="radio" name="nradio" value="Arquitecto Cloud"> Arquitecto Cloud</label>
+				</div> 
+
+				<textarea class="form__textarea" placeholder="Ingresa tu comentario aqui..."></textarea>
+
+				<div class="form__checkbox">
+					<label class="block"><input type="checkbox" value="terminosYCondiciones" required> He leido y acepto los terminos y condiciones</label>
+					<label><input type="checkbox" value="incribirEmail"> Deseo recibir imformacion en mi email</label>
+				</div>
+				<button id="submit" class="form__btn block">Enviar</button>
+				<a class="dz__a" href="https://github.com/soydz"><p class="dz">
+					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg> soydz
+				</p></a>
+			</form>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
