@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.header {
+    background-color:  #922b21;
+}
+
+.header--relative{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    position: relative;
+}
+
+.header__div--img {
+    margin: auto;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 50%; 
+}
+
+.header__img {
+    max-width: 100%;
+}
+
+.header__div--title {
+    align-self: center;
+}
+
+.header__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: -2.5rem;
+    font-size: 4rem;
+    padding: 2rem 0;
+    font-style: italic;
+    color: #fff;
+}
+
+.header__p {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    color: #fff;
+    max-width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.article{
+    display: grid;
+}
+
+.article--header {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.article__img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.article__p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.article__lista {
+    padding: 0 2rem;
+    line-height: 26px;
+}
+
+.books {
+    background-color: #f4f6f6;
+}
+
+.article--books {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 3rem;
+    margin: 3rem 0;
+}
+
+.card {
+    margin: auto;
+    width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card__p {
+    padding: 1rem;
+    position: relative;
+}
+
+.card__span {
+    position: absolute;
+    right: 1rem;
+}
+
+.leyes__h3 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.leyes__ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    list-style: none;
+    margin-top: 4rem;
+    line-height: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.leyes__ol li {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__p {
+    margin: 2rem 0;
+}
+
+.footer__a {
+    font-size: 1.3rem;
+}
+
+.footer__barra {
+    height: 3rem;
+    background-color:  #922b21;
+}
+
+.footer__a {
+    text-decoration: none;
+}
+
+.dz {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+@media(min-width: 1000px){
+    .header {
+        height: 100vh;
+    }
+    .header--relative {
+        height: 100vh;
+    }
+    .header__div--img {
+        max-width: 400px;
+    }
+    .article--header {
+        max-height: 100vh;
+    }
+    .leyes {
+        height: 65vh;
+    }
+    .footer {
+        height: 35vh;
+    }
+}
